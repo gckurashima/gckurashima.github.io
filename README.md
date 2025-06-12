@@ -1,8 +1,5 @@
 # gc-masa-kurashima.github.io
 
-こちらのリポジトリは下記ホームページテンプレートセンター様のテンプレートを使わせていただいています。  
-学習用にgithub pages を公開するために使わせていただきました。
+こちらのリポジトリは検証用にgithub pages として公開しています
+hmtlはGeminiに頼んで生成したポートフォリオサイトです
 
-
->ホームページテンプレートセンター様  
->https://template.homepage-tukurikata.com/
