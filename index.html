@@ -1,63 +1,155 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>あなたのＨＰタイトル</title>
-<meta name="keywords" content="ページのキーワードA,B,C">
-<meta name="description" content="ページの説明">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フロントエンドエンジニア ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="outer">
-<header><div id="header-container"><div id="head-inner"><h1>あなたのＨＰタイトル</h1>
-<p class="description">あなたのＨＰの説明文</p></div></div>
+    <header>
+        <div class="container">
+            <h1>私のポートフォリオ</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">私について</a></li>
+                    <li><a href="#skills">スキル</a></li>
+                    <li><a href="#projects">プロジェクト</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<nav>
-<ul>
-<li><a href="index.html">ホーム</a></li>
-<li><a href="contact.html">お問い合わせ</a></li>
-</nav>
-</header>
-<div id="content-wrapper">
-<main>
-<div id="inner">
-<h2>記事ページ見出し・大</h2>
-<p>文章あれこれ</p>
-<h3>記事ページ見出し・中</h3>
-<p>文章あれこれ</p>
-<h4>記事ページ見出し・小</h4>
-<p>文章あれこれ</p>
-</div>
-<div id="inner">
-<h2>記事ページ見出し・大</h2>
-<p>文章あれこれ</p>
-<h3>記事ページ見出し・中</h3>
-<p>文章あれこれ</p>
-<h4>記事ページ見出し・小</h4>
-<p>文章あれこれ</p>
-</div>
-<div id="inner">
-<h2>記事ページ見出し・大</h2>
-<p>文章あれこれ</p>
-<h3>記事ページ見出し・中</h3>
-<p>文章あれこれ</p>
-<h4>記事ページ見出し・小</h4>
-<p>文章あれこれ</p>
-</div>
-</main>
-<aside>
-<div id="middle-inner">
-<div class="side-title">menu</div>
-<div class="side">
-<ul>
-<li>記事ページへのリンク</li>
-<li>記事ページへのリンク</li>
-</ul>
-</div>
-</div>
-</aside>
-</div>
-<footer>© 2010 あなたのホームページ</footer>
-</div></body>
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="https://via.placeholder.com/150" alt="プロフィール画像" class="profile-img">
+                <h2>フロントエンドエンジニア</h2>
+                <p>ユーザーに最高の体験を届ける、直感的で魅力的なUI/UXを開発します。</p>
+                <a href="#projects" class="button">私の実績を見る</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-bg">
+        <div class="container">
+            <h2>私について</h2>
+            <div class="about-content">
+                <p>数年の経験を持つ**フロントエンドエンジニア**です。デザインを忠実に再現し、ユーザーフレンドリーでパフォーマンスの高いWebアプリケーション開発を追求しています。</p>
+                <p>特に、**モダンなJavaScriptフレームワーク**（React, Vue.js）と**TypeScript**を用いた開発、そして**レスポンシブデザイン**と**アクセシビリティ**に配慮したコーディングを得意としています。</p>
+                <p>常に新しい技術の動向を追い、ユーザーの期待を超えるフロントエンド開発に貢献します。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>スキル</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>主要技術</h3>
+                    <ul>
+                        <li>**HTML5** & **CSS3** (SCSS/Sass)</li>
+                        <li>**JavaScript** (ES6+)</li>
+                        <li>**TypeScript**</li>
+                        <li>**React.js** / **Next.js**</li>
+                        <li>**Vue.js** / **Nuxt.js**</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>フレームワーク & ライブラリ</h3>
+                    <ul>
+                        <li>Redux / Zustand (React)</li>
+                        <li>Vuex / Pinia (Vue)</li>
+                        <li>Tailwind CSS / Bootstrap</li>
+                        <li>jQuery</li>
+                        <li>GSAP (アニメーション)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>ツール & 開発環境</h3>
+                    <ul>
+                        <li>Git / GitHub / GitLab</li>
+                        <li>Webpack / Vite</li>
+                        <li>npm / Yarn</li>
+                        <li>VS Code</li>
+                        <li>Figma / Adobe XD (デザインツール理解)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>開発手法 & その他</h3>
+                    <ul>
+                        <li>**レスポンシブデザイン**</li>
+                        <li>**UI/UX設計**の基礎知識</li>
+                        <li>**パフォーマンス最適化**</li>
+                        <li>**アクセシビリティ** (WCAG)</li>
+                        <li>ユニットテスト (Jest, React Testing Library)</li>
+                        <li>クロスブラウザ対応</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-bg">
+        <div class="container">
+            <h2>プロジェクト</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/007bff/ffffff?text=React+E-commerce" alt="プロジェクト1画像">
+                    <h3>React & Redux Eコマースサイト</h3>
+                    <p>ReactとReduxを使い、カート機能や決済連携を備えたレスポンシブなECサイトを構築しました。</p>
+                    <a href="#" class="button button-small" target="_blank">詳細を見る</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/28a745/ffffff?text=Vue+Dashboard" alt="プロジェクト2画像">
+                    <h3>Vue.js 管理ダッシュボード</h3>
+                    <p>Vue.jsとVuexで、リアルタイムデータ表示やグラフ機能を備えた管理画面を開発しました。</p>
+                    <a href="#" class="button button-small" target="_blank">詳細を見る</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250/ffc107/ffffff?text=Next.js+Blog" alt="プロジェクト3画像">
+                    <h3>Next.js 静的ブログサイト</h3>
+                    <p>Next.jsのSSG機能を利用し、Markdownでコンテンツ管理ができる高速なブログサイトを制作しました。</p>
+                    <a href="#" class="button button-small" target="_blank">詳細を見る</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>お問い合わせ</h2>
+            <p>お仕事のご依頼やご相談は、以下のフォームまたはSNSからお気軽にご連絡ください。</p>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">お名前:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">メッセージ:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="button">送信する</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com/your-github" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+                <a href="https://x.com/your-twitter" target="_blank">X (旧Twitter)</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 フロントエンドエンジニア ポートフォリオ. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
