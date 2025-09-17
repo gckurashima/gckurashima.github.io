@@ -14,6 +14,7 @@
   document.head.appendChild(script);
 })("p68770ff8b6d5f");
 </script>
+
 <script>
 //https://tracking-dev.sitest.jp
 (function(PID){
@@ -22,6 +23,14 @@
   script.async = true;
   document.head.appendChild(script);
 })("p684a88bde022a");
+</script>
+<script>
+(function(PID){
+  var script = document.createElement("script");
+  script.src = "https://localhost:8080/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
+  script.async = true;
+  document.head.appendChild(script);
+})("35");
 </script>
 </head>
 <body>
