@@ -8,59 +8,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
 <script>
 (function(PID){
-  var script = document.createElement("script");
-  script.src = "https://tracking.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
-  script.async = true;
-  document.head.appendChild(script);
+  var script = document.createElement("script");
+  script.src = "https://tracking.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
+  script.async = true;
+  document.head.appendChild(script);
 })("p68770ff8b6d5f");
 </script>
 <script>
 //https://tracking-dev.sitest.jp
 (function(PID){
-  var script = document.createElement("script");
-  script.src = "https://tracking-dev.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
-  script.async = true;
-  document.head.appendChild(script);
+  var script = document.createElement("script");
+  script.src = "https://tracking-dev.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
+  script.async = true;
+  document.head.appendChild(script);
 })("p684a88bde022a");
 </script>
 <script>
 (function(PID){
-  var script = document.createElement("script");
-  script.src = "https://tracking.dev.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
-  script.async = true;
-  document.head.appendChild(script);
+  var script = document.createElement("script");
+  script.src = "https://tracking.dev.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
+  script.async = true;
+  document.head.appendChild(script);
 })("5e8ac38993117");
 </script>
 <script>
 (function(PID){
-  var script = document.createElement("script");
-  script.src = "https://tracking-dev.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
-  script.async = true;
-  document.head.appendChild(script);
+  var script = document.createElement("script");
+  script.src = "https://tracking-dev.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
+  script.async = true;
+  document.head.appendChild(script);
 })("p68e633d16e7c9");
 </script>
 <script>
 (function(PID){
-  var script = document.createElement("script");
-  script.src = "http://localhost:8080/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
-  script.async = true;
-  document.head.appendChild(script);
+  var script = document.createElement("script");
+  script.src = "http://localhost:8080/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
+  script.async = true;
+  document.head.appendChild(script);
 })("35");
 </script>
 </head>
 <body>
     <section id="contact">
         <div class="container">
-            <!-- <video src="test-video.mov" title="テスト動画">
-              テスト動画の再生をサポートしていません。
-            </video> -->
             <h2>お問い合わせ</h2>
             <p>お仕事のご依頼やご相談は、以下のフォームまたはSNSからお気軽にご連絡ください。</p>
             <form action="#" method="POST" class="contact-form">
+                
                 <div class="form-group">
                     <label for="name">お名前:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
+                <div class="form-group">
+                    <label for="furigana">フリガナ (全角カナ):</label>
+                    <input type="text" id="furigana" name="furigana" required placeholder="ヤマダ タロウ">
+                </div>
+                
+                <div class="form-group">
+                    <label for="inquiry-type">お問い合わせの種類:</label>
+                    <select id="inquiry-type" name="inquiry-type" required>
+                        <option value="">選択してください</option>
+                        <option value="job">お仕事のご依頼</option>
+                        <option value="consult">技術相談・質問</option>
+                        <option value="other">その他</option>
+                    </select>
+                </div>
+
                 <div class="form-group">
                     <label for="email">メールアドレス:</label>
                     <input type="email" id="email" name="email" required>
