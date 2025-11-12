@@ -65,12 +65,23 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="inquiry-type">お問い合わせの種類:</label>
-                    <select id="inquiry-type" name="inquiry-type" >
-                        <option value="">選択してください</option>
+                    <label for="inquiry-type">お問い合わせの種類 (複数選択可):</label>
+                    <select id="inquiry-type" name="inquiry-type[]" multiple size="4" required>
                         <option value="job">お仕事のご依頼</option>
                         <option value="consult">技術相談・質問</option>
+                        <option value="feedback">フィードバック</option>
                         <option value="other">その他</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-time">希望連絡時間帯:</label>
+                    <select id="contact-time" name="contact-time" required>
+                        <option value="">選択してください</option>
+                        <option value="am">午前中 (9:00 - 12:00)</option>
+                        <option value="pm">午後 (12:00 - 17:00)</option>
+                        <option value="evening">夕方以降 (17:00 - )</option>
+                        <option value="any">いつでも可</option>
                     </select>
                 </div>
 
