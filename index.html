@@ -50,6 +50,14 @@
 </script>
 <script>
 (function(PID){
+  var script = document.createElement("script");
+  script.src = "http://localhost:8080/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search);
+  script.async = true;
+  document.head.appendChild(script);
+})("41");
+</script>
+<script>
+(function(PID){
   var dev = "";
   if (navigator.userAgent){
     dev = navigator.userAgent.match(/(android.*mobile|iphone|ipod|mobilessafari|iemobile|operasmini|windowssphone)/i)? "(sp)": "(pc)";
