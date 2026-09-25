@@ -15,6 +15,22 @@
 })("p68770ff8b6d5f");
 </script>
 <script>
+(function(PID){
+  var dev = "";
+  if (navigator.userAgent){
+    dev = navigator.userAgent.match(/(android.*mobile|iphone|ipod|mobilessafari|iemobile|operasmini|windowssphone)/i)? "(sp)": "(pc)";
+  }else{
+    dev = "";
+  }
+  var name = dev + decodeURIComponent(location.hostname + location.pathname);
+  var script = document.createElement("script");
+  script.src = "https://tracking.sitest.jp/tag?p=" + PID + "&u=" + encodeURIComponent(location.origin + location.pathname + location.search) + "&n=" + name;
+  script.async = true;
+  document.head.appendChild(script);
+})("p698d8b6abbda2");
+</script>
+
+<script>
 //https://tracking-dev.sitest.jp
 (function(PID){
   var script = document.createElement("script");
